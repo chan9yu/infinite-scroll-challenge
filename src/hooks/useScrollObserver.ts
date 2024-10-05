@@ -35,8 +35,9 @@ export const useScrollObserver = (onEnterViewport?: () => void, onExitViewport?:
 			.on(IntersectionObserverService.EVENTS.LEAVE_EVENT, handleExit);
 
 		return () => {
-			observerService.off(IntersectionObserverService.EVENTS.INTERSECT_EVENT, handleEnter);
-			observerService.off(IntersectionObserverService.EVENTS.LEAVE_EVENT, handleExit);
+			observerService
+				.off(IntersectionObserverService.EVENTS.INTERSECT_EVENT, handleEnter)
+				.off(IntersectionObserverService.EVENTS.LEAVE_EVENT, handleExit);
 		};
 	}, [onEnterViewport, onExitViewport]);
 
