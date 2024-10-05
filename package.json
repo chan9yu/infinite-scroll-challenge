@@ -1,0 +1,40 @@
+{
+  "name": "infinite-scroll-challenge",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "🧑🏻‍💻 infinite scroll challenge with React",
+  "packageManager": "pnpm@9.12.0",
+  "author": "chan9yu <dev.cgyeo@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chan9yu/infinite-scroll-challenge"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.34.4",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.8",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  }
+}
