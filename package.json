@@ -6,6 +6,7 @@
 	"description": "🧑🏻‍💻 infinite scroll challenge with React",
 	"packageManager": "pnpm@9.12.0",
 	"author": "chan9yu <dev.cgyeo@gmail.com>",
+	"homepage": "https://chan9yu.github.io/infinite-scroll-challenge/",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/chan9yu/infinite-scroll-challenge"
@@ -14,7 +15,8 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"debug": "^4.3.7",
@@ -37,6 +39,7 @@
 		"eslint-plugin-react-hooks": "^4.6.2",
 		"eslint-plugin-react-refresh": "^0.4.8",
 		"eslint-plugin-storybook": "^0.8.0",
+		"gh-pages": "^6.1.1",
 		"postcss": "^8.4.47",
 		"prettier": "^3.3.3",
 		"tailwindcss": "^3.4.13",
