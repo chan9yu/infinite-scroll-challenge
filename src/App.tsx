@@ -36,8 +36,8 @@ export default function App() {
 			<Header totalPrice={totalPrice} totalItems={products.length} />
 			<div className="w-full h-full overflow-y-scroll">
 				<ul className="w-11/12 mt-5 mx-auto px-6 bg-white shadow-xl divide-y divide-gray-200 border border-slate-200 rounded-lg">
-					{products.map(({ boughtDate, price, productName }, idx) => (
-						<Item key={idx} boughtDate={boughtDate} price={price} productName={productName} />
+					{products.map(({ boughtDate, price, productId, productName }) => (
+						<Item key={productId} boughtDate={boughtDate} price={price} productName={productName} />
 					))}
 				</ul>
 				<div ref={targetRef} className="p-4 flex justify-center">
